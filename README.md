@@ -1,0 +1,1 @@
+# JajanKuy.github.io
