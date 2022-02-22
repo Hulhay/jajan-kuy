@@ -13,7 +13,7 @@ body {
 	justify-content: center;
 	align-items: center;
 	font-family: 'Mukta Malar', sans-serif;
-	background: url("/img/bg-login.svg");
+	background: url("../img/bg-login.svg");
 	background-position: center;
 	background-size: contain;
 	background-repeat: no-repeat;
