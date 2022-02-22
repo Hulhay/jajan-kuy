@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta+Malar:wght@300;400&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	font-family: 'Mukta Malar', sans-serif;
+	background: url("/img/bg-login.svg");
+	background-position: center;
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+header {
+	font-size: 1.3em;
+	line-height: 1.5em;
+	color: #cc080b;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+header p {
+	text-align: right;
+	font-size: 0.8em;
+}
+
+form {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+form input, form select {
+	height: 38px;
+	width: 100%;
+	padding: 10px;
+	margin-bottom: 5px;
+	border: none;
+	border-radius: 5px;
+	color: grey;
+}
+
+form input:focus {
+	color: #000;
+}
+
+#mulaiJajan {
+	background-color: #cc080b;
+	padding: 5px 20px;
+	margin-top: 30px;
+	width: 70%;
+	text-align: center;
+	border-radius: 10px;
+	border: none;
+	color: #fff;
+	font-size: 1.2em;
+	cursor: pointer;
+}
+
+footer {
+	position: fixed;
+	bottom: 0;
+	margin-right: 10px;
+	font-size: 0.8em;
+}

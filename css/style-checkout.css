@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta+Malar:wght@300;400&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Mukta Malar', sans-serif;
+}
+
+header {
+	display: flex;
+	align-items: center;
+	border-bottom: 3px solid #cc080b;
+}
+
+button {
+	border: none;
+	background: transparent;
+	cursor: pointer;
+}
+
+button i {
+	font-size: 4em;
+	text-decoration: none;
+	color: #cc080b;
+}
+
+main {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	align-items: center;
+	margin-top: 20px;
+}
+
+main h2 {
+	font-size: 1.5em;
+	letter-spacing: 1px;
+}
+
+main form {
+	display: flex;
+	flex-direction: column;
+}
+
+main label {
+	border-bottom: 1px dashed #aaa;
+	width: 25%;
+}
+
+main input {
+	padding: 0px 5px;
+	font-family: 'Mukta Malar', sans-serif;
+	font-size: 1em;
+	border: none;
+	font-weight: bold;
+	background-color: #fff;
+}
+
+main #total-harga, main #nama-toko {
+	text-align: right;
+}
+
+main #nama-toko {
+	color: #cc080b;
+}
+
+main textarea {
+	border: none;
+	font-size: 1em;
+	line-height: 1.1em;
+	font-family: 'Mukta Malar', sans-serif;
+	background-color: #fff;
+	resize: none;
+	width: 100%;
+	padding: 5px;
+}
+
+main #note {
+	border: 1px solid #aaa;
+	border-radius: 5px;
+}
+
+.btn-beli {
+	display: flex;
+	justify-content: center;
+	width: 100px;
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	border: none;
+	color: #fff;
+	font-size: 1.5em;
+	border-radius: 12px;
+	padding: 16px;
+	margin: 20px 40px;
+	background-color: #79a33d;
+	cursor: pointer;
+}
+
+.sending {
+	display: flex;
+	justify-content: center;
+	width: 130px;
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	border: none;
+	color: #fff;
+	font-size: 1.5em;
+	border-radius: 12px;
+	padding: 16px;
+	margin: 20px 40px;
+	background-color: #cc080b;
+	cursor: pointer;
+}
+
+.toHome {
+	display: flex;
+	justify-content: center;
+	width: 150px;
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	border: none;
+	color: #fff;
+	font-size: 1.5em;
+	border-radius: 12px;
+	padding: 16px;
+	margin: 20px 40px;
+	background-color: #79a33d;
+	cursor: pointer;
+}
+
+.toHome a {
+	text-decoration: none;
+	color: #fff;
+}
+
+.hide {
+	display: none;
+}

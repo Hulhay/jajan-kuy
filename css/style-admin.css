@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta+Malar:wght@300;400&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Mukta Malar', sans-serif;
+	height: 100vh;
+}
+
+header {
+	border-bottom: 2px dashed #aaa;
+	margin-bottom: 20px;
+}
+
+header h1{
+	line-height: 1.5em;
+	color: #cc080b;
+	font-weight: bold;
+	padding: 20px 20px 5px;
+}
+
+header p {
+	padding: 5px 20px 10px;
+	line-height: 1.3em;
+}
+
+main {
+	padding-left: 20px;
+	margin-bottom: 20px;
+}
+
+main form {
+	display: flex;
+	flex-direction: column;
+	width: 90%;
+}
+
+form th {
+	width: 100px;
+	text-align: left;
+	font-weight: bold;
+}
+
+form input, form select {
+	height: 38px;
+	width: 100%;
+	padding: 10px;
+	margin-bottom: 7px;
+	border: 1px solid #eee;
+	border-radius: 5px;
+	color: black;
+	background-color: #eee;
+}
+
+form #generate-laporan {
+	background-color: #cc080b;
+	width: 30%;
+	align-self: flex-end;
+	border-radius: 5px;
+	border: none;
+	color: #fff;
+	padding: 5px;
+	font-size: 1em;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+section form {
+	display: flex;
+	flex-direction: column;
+	width: 90%;
+	justify-content: center;
+	align-items: flex-start;
+	padding-left: 20px;
+	/*background-color: red;*/
+}
+
+section form textarea {
+	padding: 10px;
+	border-radius: 5px;
+	border-color: #aaa;
+}
+
+.btn-action {
+	/*background-color: blue;*/
+	/*width: 60%;*/
+}
+
+.btn-action #salinPesan,
+.btn-action #resetPesan {
+	margin: 10px 5px 0px 0px;
+	/*width: 40%;*/
+	align-self: flex-end;
+	border-radius: 5px;
+	border: none;
+	color: #fff;
+	padding: 7px 15px;
+	font-size: 1em;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+.btn-action #salinPesan {
+	background-color: #79a33d;
+}
+
+.btn-action #resetPesan {
+	background-color: #cc080b;
+}
+
+footer {
+	position: fixed;
+	top: 0;
+	right: 0;
+	margin: 5px 10px;
+	font-size: 0.7em;
+}

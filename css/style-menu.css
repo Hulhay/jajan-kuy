@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta+Malar:wght@300;400&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Mukta Malar', sans-serif;
+	padding-bottom: 100px;
+}
+
+header {
+	display: flex;
+	align-items: center;
+	border-bottom: 3px solid #cc080b;
+}
+
+header a i {
+	font-size: 3em;
+	text-decoration: none;
+	color: #cc080b;
+}
+
+.toko-container {
+	margin: 20px;
+	display: flex;
+	align-items: center;
+}
+
+.toko-container i {
+	font-size: 3em;
+	color: #cc080b;
+}
+
+.toko-container .toko-info {
+	line-height: 1.5em;
+	padding-left: 10px;	
+}
+
+main {
+	display: flex;
+	flex-direction: column;
+	margin: 5px 20px;
+}
+
+main .category {
+	font-size: 1.4em;
+	border-bottom: 2px dashed #aaa;
+	margin: 10px 0;
+}
+
+.menu {
+	display: flex;
+	align-items: center;
+	border-radius: 18px;
+	box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.6);
+	margin: 5px 0;
+	padding: 16px;
+}
+
+.menu img {
+	width: 100px;
+	height: 100px;
+	background-color: #f1ac18;
+	border-radius: 16px;
+	box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.6);
+}
+
+.menu .menu-info {
+	width: 100%;
+	margin-left: 16px;
+}
+
+.menu .menu-info .btn-counter {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	line-height: 1.3em;
+	vertical-align: middle;
+}
+
+.btn-counter span {
+	width: 50px;
+	text-align: center;
+	font-weight: bold;
+}
+
+.btn-counter .btn-min, .btn-counter .btn-plus {
+	border: 2px solid #cc080b;
+	width: 24px;
+	text-align: center;
+	border-radius: 12px;
+	color: #cc080b;
+	cursor: pointer;
+	font-weight: bold;
+}
+
+.recap-container {
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	margin: 20px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.recap-container a {
+	text-decoration: none;
+}
+
+.recap-container .recap {
+	background-color: #79a33d;
+	height: 75px;
+	display: flex;
+	align-items: center;
+	color: #fff;
+	font-size: 1.2em;
+	border-radius: 12px;
+	padding: 16px;
+	width: 100%;
+	margin-right: 10px;
+	box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.6);
+	opacity: 0;
+	transform: translateY(100px);
+	transition: all 0.5s;
+	font-size: 1.3em;
+	justify-content: center;
+	
+}
+
+.recap-container .recap.show-recap {
+	transform: translateY(0);
+	opacity: 1;
+}
+
+.recap-container .cart {
+	background-color: #79a33d;
+	width: 75px;
+	height: 75px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-right: 40px;
+	padding: 20px;
+	border-radius: 12px;
+	box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.6);
+	cursor: pointer;
+}
+
+.recap-container .cart i {
+	color: #fff;
+	font-size: 2.5em;
+}

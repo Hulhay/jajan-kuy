@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style-admin.css">
+	<title>Admin - JK</title>
+</head>
+<body>
+
+	<header>
+		<h1>Admin Jajan Kuy</h1>
+		<p>Halaman ini digunakan untuk membuat laporan jajan santri dan men-<i>generate</i> laporan tersebut ke dalam format chat.</p>
+	</header>
+
+	<main>
+		<form>
+			<table>
+				<tbody>
+					<tr>
+						<th>
+							<label>Kamar</label>
+						</th>
+						<td>
+							<select id="kamar" required>
+								<option value="0">-- Pilih Kamar --</option>
+								<option value="Tahfizh">Tahfizh</option>
+								<!-- <option value="DH2">DH 2</option> -->
+								<!-- <option value="alKautsar">al-Kautsar</option> -->
+								<!-- <option value="attaubah">at-Taubah</option> -->
+								<!-- <option value="anNahl">an-Nahl</option> -->
+								<!-- <option value="alFurqan">al-Furqan</option> -->
+								<!-- <option value="alIkhlas">al-Ikhlas</option> -->
+								<!-- <option value="alQalam">al-Qalam</option> -->
+								<!-- <option value="alFajr">al-Fajr</option> -->
+								<!-- <option value="alMuminun">al-Mu'minun</option> -->
+								<!-- <option value="alAraf">al-Araf</option> -->
+								<!-- <option value="anNaba">an-Naba</option> -->
+								<!-- <option value="anNur">an-Nur</option> -->
+								<!-- <option value="anNajm">an-Najm</option> -->
+								<!-- <option value="anNashr">an-Nashr</option> -->
+							</select>
+						</td>
+					</tr>
+					<tr>
+						<th>
+							<label>Tanggal</label>
+						</th>
+						<td>
+							<input type="date" id="tanggal" placeholder="-- Masukkan Tanggal --" required>
+						</td>
+					</tr>
+					<tr>
+						<th>
+							<label>Toko</label>
+						</th>
+						<td>
+							<select id="toko" required>
+								<option value="0">-- Pilih Toko --</option>
+								<option value="Kedai Berkah">Kedai Berkah</option>
+								<option value="Warung Haura dan Kedai BeTah">Warung Haura dan Kedai BeTah</option>
+							</select>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+
+			<button type="submit" id="generate-laporan">Buat</button>
+		</form>
+	</main>
+
+	<section>
+		<form>
+			<textarea id="laporan" cols="35" rows="12" placeholder="Laporan akan muncul di sini"></textarea>
+			<label hidden>*) Pesan bisa diedit..</label>
+			<div class="btn-action">
+				<button type="submit" id="salinPesan">Salin</button>
+				<button type="submit" id="resetPesan">Hapus</button>
+			</div>
+		</form>
+	</section>
+
+	<footer>
+		<p>with &hearts; Mang. Prasetyo</p>
+	</footer>
+
+	<script type="text/javascript" src="js/admin.js"></script>
+	
+</body>
+</html>

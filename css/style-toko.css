@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta+Malar:wght@300;400&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Mukta Malar', sans-serif;
+}
+
+header {
+	display: flex;
+	align-items: center;
+	border-bottom: 3px solid #cc080b;
+}
+
+header a i {
+	font-size: 3em;
+	text-decoration: none;
+	color: #cc080b;
+}
+
+main {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+	grid-gap: 10px;
+	justify-items: center;
+	margin: 20px;
+}
+
+main .toko {
+	text-decoration: none;
+	color: #000;
+}
+
+main .toko .container{
+	width: 150px;
+	height: 150px;
+	background-color: #fff;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	border-radius: 18px;
+	padding: 10px;
+	text-align: center;
+	box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.6);
+}
+
+main .toko .container i {
+	font-size: 3em;
+	color: #cc080b;
+}
+
+main .toko .container h2 {
+	font-size: 1.1em;
+}
+
+footer {
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	margin-right: 10px;
+	font-size: 0.8em;
+}

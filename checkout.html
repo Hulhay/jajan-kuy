@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style-checkout.css">
+	<link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+	<!-- <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script> -->
+	<title>Jajan Kuy</title>
+</head>
+<body>
+
+	<header>
+		<button type="submit" id="back-btn">
+			<i class='bx bx-chevron-left'></i>
+		</button>
+		<h1>Checkout</h1>
+	</header>
+
+	<main>
+		<h2><u>Konfirmasi Pesanan</u></h2>
+		<form name="submit-to-google-sheet">
+			<input type="text" id="nama-toko" name="nama_toko" disabled>
+			<label>Nama</label>
+			<input type="text" id="nama-pembeli" name="nama_pembeli" disabled>
+			<label>Kamar</label>
+			<input type="text" id="nama-kamar" name="nama_kamar" disabled>
+			<label>Pesanan</label>
+			<textarea name="rekap_jajan" id="rekapPesanan" cols="30" rows="10" disabled>
+			</textarea>
+			<div class="ket-harga">
+				<label>Total Harga</label>
+				<input type="text" id="total-harga" name="total_harga" disabled>
+			</div>
+			<textarea placeholder="Catatan (contoh: pedes banget)" name="notes" id="note" cols="30" rows="2"></textarea>
+			<button type="submit" class="btn-beli">Beli</button>
+	        <button type="submit" class="sending hide" disabled>Tunggu..</button>
+	        <button type="submit" class="toHome hide"><a href="index.html">Jajan lagi</a></button>
+		</form>
+	</main>
+
+	<script type="text/javascript" src="js/storage.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+	
+	
+</body>
+</html>
+
+<!-- nama : Ivan
+kamar : Tahfizh
+- Miago Original
+- Nasi Ayam Katsu Nori
+
+Total : 23.000 -->
