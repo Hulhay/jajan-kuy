@@ -15,7 +15,7 @@ btnBuat.addEventListener('click', function() {
 	btnBuat.innerText = 'Tunggu';
 	chat.value = '';
 
-	fetch("https://api.apispreadsheets.com/data/lS2bJYYYhD7HABko/").then(res=>{
+	fetch("https://api.apispreadsheets.com/data/trkwrJHOLsYagj5n/").then(res=>{
 		if (res.status === 200){
 			// SUCCESS
 			res.json().then(data=>{

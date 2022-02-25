@@ -73,17 +73,18 @@ function createMinusButton(menuId) {
 		let harga = menuContainer.querySelector('.menu-info > p');
 		harga = parseInt(harga.innerText.replace('.', ''));
 
-		displayText.innerText--;
-
 		let displayTotal = document.querySelector('.total-harga');
-		
-
-		if (displayText.innerText < 0) {
-			displayText.innerText = 0;
-		}
 
 		let totalHarga = parseInt(displayTotal.innerText.replace('.', ''));
-		totalHarga -= harga;
+		
+		if (displayText.innerText > 0) {
+			displayText.innerText--;	
+			totalHarga -= harga;
+		} else {
+			displayText.innerText = 0;
+			totalHarga -= 0;
+		}
+
 		let s = toCurrencyFormat(totalHarga);
 		displayTotal.innerText = s;
 
